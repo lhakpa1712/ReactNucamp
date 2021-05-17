@@ -3,6 +3,7 @@ import {Navbar, NavbarBrand} from 'reactstrap';
 import Directory from './components/DirectoryComponent'
 import {CAMPSITES} from './shared/campsites'
 import './App.css';
+import CampsiteInfo from './components/CampsiteInfoComponent';
 
 
 class App extends Component {
@@ -22,6 +23,7 @@ class App extends Component {
               </div>
               </Navbar>
               <Directory campsites={this.state.campsites}/>
+              <CampsiteInfo/>
           </div>
       );
   }
