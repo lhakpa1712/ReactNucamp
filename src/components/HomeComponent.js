@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap';
-import {Loading} from './LoadingComponent'
+import {Loading} from './LoadingComponent';
 
 function RenderCard({item, isLoading, errMess}) {
     if (isLoading) {
@@ -27,9 +27,9 @@ function Home(props) {
         <div className="row">
             <div className="col-md m-1">
                 <RenderCard 
-                item={props.campsite}
-                isLoading={props.campsiteLoading}
-                errMess ={props.campsitesErrMess}            />
+                    item={props.campsite}
+                    isLoading={props.campsitesLoading}
+                    errMess ={props.campsitesErrMess} />
             </div>
             <div className="col-md m-1">
                 <RenderCard item={props.promotion} />
@@ -41,15 +41,5 @@ function Home(props) {
     </div>
     )
 }
-// function RenderCard({item}) {
-//     return (
-//         <Card>
-//             <CardImg src={item.image} alt={item.name} />
-//             <CardBody>
-//                 <CardTitle>{item.name}</CardTitle>
-//                 <CardText>{item.description}</CardText>
-//             </CardBody>
-//         </Card>
-//     );
-// }
+
 export default Home;
