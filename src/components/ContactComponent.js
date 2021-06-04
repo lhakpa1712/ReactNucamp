@@ -29,6 +29,7 @@ class Contact extends Component{
                 email:false
             }
         };
+        this.handleSubmit = this.handleSubmit.bind(this);
     }
 
     handleSubmit(values){
